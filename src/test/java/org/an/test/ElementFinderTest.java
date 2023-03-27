@@ -21,8 +21,8 @@ import java.util.UUID;
 
 public class ElementFinderTest {
     private static final String FILE_NAME = "test-xml.xml";
-    //private static final int ELEMENT_COUNT = 120_000_000;
-    private static final int ELEMENT_COUNT = 10;
+    private static final int ELEMENT_COUNT = 10_000_000; // About 1 Gb file size
+    //private static final int ELEMENT_COUNT = 10;
 
     private static final String FINDING_ELEMENT_NAME = "elementToFind";
     private static final String FINDING_ATTR_NAME = "attrToFind";
