@@ -75,20 +75,20 @@ public class ElementFinderTest {
 
     @Test(dependsOnMethods = {"dataGen"})
     public void testFindElement1() throws XMLStreamException, IOException {
-        String result = testFindElement(END_MARK);
-        Assert.assertEquals(result, "Postion:0");
+        String result = testFindElement(START_MARK);
+        Assert.assertEquals(result, "Position:0");
     }
 
     @Test(dependsOnMethods = {"dataGen"})
     public void testFindElement2() throws XMLStreamException, IOException {
         String result = testFindElement(MIDDLE_MARK);
-        Assert.assertEquals(result, "Postion:" + (ELEMENT_COUNT / 2));
+        Assert.assertEquals(result, "Position:" + (ELEMENT_COUNT / 2));
     }
 
     @Test(dependsOnMethods = {"dataGen"})
     public void testFindElement3() throws XMLStreamException, IOException {
         String result = testFindElement(END_MARK);
-        Assert.assertEquals(result, "Postion:" + (ELEMENT_COUNT - 1));
+        Assert.assertEquals(result, "Position:" + (ELEMENT_COUNT - 1));
     }
 
     private String testFindElement(String valueToFind) throws XMLStreamException, IOException {
